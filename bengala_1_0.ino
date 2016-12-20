@@ -23,7 +23,7 @@ void setup()
 }
 
 void loop()
-	{
+{
 	long microsec = ultrasonic.timing();
 	long microsec2 = ultrasonic2.timing();
 	//Atribui os valores em cm ou polegadas as variaveis
