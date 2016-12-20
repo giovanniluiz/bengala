@@ -23,7 +23,7 @@ void setup()
 }
 
 void loop()
-{
+	{
 	long microsec = ultrasonic.timing();
 	long microsec2 = ultrasonic2.timing();
 	//Atribui os valores em cm ou polegadas as variaveis
@@ -34,15 +34,15 @@ void loop()
 	Serial.println(cmMsec2);
 	Serial.print("Centimetros 1: ");
 	Serial.println(cmMsec);
-    if(cmMsec2 <100){
+	if(cmMsec2 <100){
 		digitalWrite(VIBRADOR, true); 
 		delay(1000/cmMsec2);
 		digitalWrite(VIBRADOR, false);
-    }
-    if(cmMsec <100){
+	}
+	if(cmMsec <100){
 		digitalWrite(VIBRADOR2, true); 
 		delay(1000/cmMsec);
 		digitalWrite(VIBRADOR2, false);
-    }
-  delay(10);
+	}
+	delay(10);
 }
