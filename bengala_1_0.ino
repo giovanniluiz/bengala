@@ -29,7 +29,7 @@ void loop()
 	//Atribui os valores em cm ou polegadas as variaveis
 	cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
 	cmMsec2 = ultrasonic2.convert(microsec2, Ultrasonic::CM);
-  
+
 	Serial.print("Centimetros 2: ");
 	Serial.println(cmMsec2);
 	Serial.print("Centimetros 1: ");
